@@ -1,2 +1,2 @@
 # marketing-page
-//https://colorhunt.co/palette/138147
+Color Palette:  https://colorhunt.co/palette/138147
