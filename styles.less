@@ -66,18 +66,28 @@ header{
   width: 100%;
   background-color: @accentColor;
   z-index: 2;
+  box-shadow: 0 3px 6px;
   position: absolute;
+  display: flex;
+  justify-content: space-between;
 }
 .pageTitle{
   margin-left: 50px;
   margin-top: 30vh;
-  display: flex;
 }
 button{
-  justify-content: flex-end;
+  margin-right: 100px;
+  margin-top: 30vh;
+  min-width: 200px;
+  height: 100px;
+  font-size: 40px;
+  border-radius: 25px;
+  background-color: @primaryColor;
+  color: @textColor;
 }
  h1{
     font-size:70px;
+    color: @primaryColor;
   }
 h2{
   font-size: 25px;
@@ -110,21 +120,25 @@ h2{
 }
 nav{
   height: 50px;
-  width: 100%;
+  width: 100vw;
   background-color: @accentColor;
   margin: auto 0;
-  ul{
-    li{
-      display: inline;
-    }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 20px;
   }
   a{
     text-decoration: none;
     color: @textColor;
+    padding: 20px;
   }
   a:hover{
     color: @primaryColor
   }
+}
+.navSide {
+  margin:50px
 }
   #mainNav{
     box-shadow: 0 3px 6px;
