@@ -96,28 +96,66 @@ button:hover{
 h2{
   font-size: 25px;
 }
+.cardsArea{
+	max-width: 60%;
+	min-height: 100vh;
+	margin-top: 10vh;
+	margin: auto;
+	margin-bottom: 10vh;
+	padding: 50px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	h2{
+		padding: 20px 0;
+	}
+	p{
+		padding: 20px;
+	}
+}
 .card{
   background: white;
   height: 300px;
   width: 300px;
-  margin: 1rem;
-  top: 50%;
-  transform: translate(-50%, -50%);
+	box-shadow: 0 2.5px 5px;
+	margin-left: -300px;
+	margin-bottom: 40px;
+}
+.cardContent{
+	background-color: @primaryColor;
+	max-width: 600px;
+	min-width: 300px;
+	margin-left: 300px;
+	height: 300px;
+	color: black;
 }
 .card1{
-	background-image: url(refugeemage.jpg);
+	background-image: url(https://avatars1.githubusercontent.com/u/48700036?s=460&v=4);
 	background-position:center;
 	background-repeat:no-repeat;
 	background-size:cover;
 }
 .card2{
-	background-image: url("marketingimage.jpg");
+	background-image: url("https://avatars1.githubusercontent.com/u/48581161?s=460&v=4");
 	background-position:center;
 	background-repeat:no-repeat;
 	background-size:cover;
 }
 .card3{
-	background-image: url("https://i1.sndcdn.com/avatars-000557575080-rlpzq0-t500x500.jpg");
+	background-image: url("https://avatars3.githubusercontent.com/u/39208729?s=460&v=4");
+	background-position:center;
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+.card4{
+	background-image: url("https://avatars3.githubusercontent.com/u/42080781?s=460&v=4");
+	background-position:center;
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+.card5{
+	background-image: url("https://avatars0.githubusercontent.com/u/12643254?s=460&v=4");
 	background-position:center;
 	background-repeat:no-repeat;
 	background-size:cover;
@@ -155,10 +193,10 @@ nav{
 }
 .content{
   max-width: 60%;
-	height: 100vh;
+	min-height: 100vh;
   background-color: @primaryColor;
+	margin-top: 10vh;
   margin: auto;
-  margin-top: 110vh;
   margin-bottom: 10vh;
   box-shadow: 0 2.5px 5px;
   padding: 50px;
@@ -168,6 +206,9 @@ nav{
   p{
     padding: 20px;
   }
+}
+.homeContent{
+	margin-top: 110vh;
 }
 footer{
   height: 50px;
