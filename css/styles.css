@@ -135,18 +135,28 @@ header {
   width: 100%;
   background-color: #1cb3c8;
   z-index: 2;
+  box-shadow: 0 3px 6px;
   position: absolute;
+  display: flex;
+  justify-content: space-between;
 }
 .pageTitle {
   margin-left: 50px;
   margin-top: 30vh;
-  display: flex;
 }
 button {
-  justify-content: flex-end;
+  margin-right: 100px;
+  margin-top: 30vh;
+  min-width: 200px;
+  height: 100px;
+  font-size: 40px;
+  border-radius: 25px;
+  background-color: #dfe2e2;
+  color: #3c415e;
 }
 h1 {
   font-size: 70px;
+  color: #dfe2e2;
 }
 h2 {
   font-size: 25px;
@@ -179,19 +189,24 @@ h2 {
 }
 nav {
   height: 50px;
-  width: 100%;
+  width: 100vw;
   background-color: #1cb3c8;
   margin: auto 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 20px;
 }
-nav ul li {
-  display: inline;
-}
-nav a {
+a {
   text-decoration: none;
   color: #3c415e;
+  padding: 20px;
 }
-nav a:hover {
+a:hover {
   color: #dfe2e2;
+}
+.navSide {
+  margin: 50px;
 }
 #mainNav {
   box-shadow: 0 3px 6px;
