@@ -47,6 +47,10 @@ table {
 	border-spacing: 0;
 }
 
+
+//start styles
+
+
 //main colors
 @primaryColor: #dfe2e2;
 @secondaryColor: #738598;
@@ -56,20 +60,33 @@ table {
 body{
   background-color: @secondaryColor;
   color: @textColor;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
+header{
+  height: 100vh;
+  width: 100%;
+  background-color: @accentColor;
+  z-index: 2;
+  position: absolute;
+}
+.pageTitle{
+  margin-left: 50px;
+  margin-top: 30vh;
+  display: flex;
+}
+button{
+  justify-content: flex-end;
+}
+ h1{
+    font-size:70px;
+  }
 h2{
   font-size: 25px;
 }
 .card{
   background: white;
-  display: inline-block;
   height: 300px;
   width: 300px;
   margin: 1rem;
-	position: absolute;
   top: 50%;
   transform: translate(-50%, -50%);
 }
@@ -96,7 +113,6 @@ nav{
   width: 100%;
   background-color: @accentColor;
   margin: auto 0;
-  box-shadow: 0 3px 6px;
   ul{
     li{
       display: inline;
@@ -110,13 +126,25 @@ nav{
     color: @primaryColor
   }
 }
+  #mainNav{
+    box-shadow: 0 3px 6px;
+    position: sticky;
+    top: -1px;
+  }
+#topNav{
+  z-index: 1;
+  position: absolute;
+}
 .content{
   max-width: 60%;
   background-color: @primaryColor;
-  margin: 30px;
+  margin: auto;
+  margin-top: 110vh;
+  margin-bottom: 10vh;
   box-shadow: 0 2.5px 5px;
+  padding: 50px;
   h2{
-    padding: 20px;
+    padding: 20px 0;
   }
   p{
     padding: 20px;
